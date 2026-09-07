@@ -1,0 +1,758 @@
+/* =========================================================
+HEART & HOME CREATIONS
+MASTER STYLESHEET
+
+Website:
+Heart & Home Creations by Sam & Wanda
+
+Pages:
+index.html
+gallery.html
+contact.html
+========================================================= */
+
+/* =========================================================
+ROOT
+========================================================= */
+
+:root {
+
+--cream: #f7f1e8;
+--warm-white: #fffdf9;
+--soft-beige: #e9dfd1;
+--taupe: #bca58e;
+--wood: #8a6549;
+--deep-brown: #3f3028;
+--soft-brown: #6f5647;
+--rose: #b77d68;
+--sage: #7d8b70;
+--dark-sage: #526149;
+--border: #ded1c2;
+--shadow:
+    0 12px 35px
+    rgba(63, 48, 40, 0.12);
+--transition:
+    0.3s ease;
+
+}
+
+/* =========================================================
+RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+scroll-behavior: smooth;
+
+}
+
+body {
+
+background:
+    var(--cream);
+color:
+    var(--deep-brown);
+font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+line-height:
+    1.7;
+
+}
+
+img {
+
+display: block;
+max-width: 100%;
+
+}
+
+a {
+
+color:
+    inherit;
+text-decoration:
+    none;
+
+}
+
+/* =========================================================
+CONTENT CONTAINER
+========================================================= */
+
+.content-container {
+
+width:
+    min(1100px, 90%);
+margin:
+    0 auto;
+
+}
+
+/* =========================================================
+HEADER
+========================================================= */
+
+.site-header {
+
+position:
+    sticky;
+top:
+    0;
+z-index:
+    1000;
+background:
+    rgba(255, 253, 249, 0.97);
+border-bottom:
+    1px solid
+    var(--border);
+backdrop-filter:
+    blur(10px);
+
+}
+
+.header-inner {
+
+width:
+    min(1300px, 92%);
+min-height:
+    76px;
+margin:
+    0 auto;
+display:
+    flex;
+align-items:
+    center;
+justify-content:
+    space-between;
+gap:
+    30px;
+
+}
+
+.site-name {
+
+color:
+    var(--deep-brown);
+font-size:
+    1.25rem;
+font-weight:
+    bold;
+letter-spacing:
+    0.03em;
+
+}
+
+.main-navigation {
+
+display:
+    flex;
+align-items:
+    center;
+gap:
+    8px;
+
+}
+
+.main-navigation a {
+
+padding:
+    10px 16px;
+color:
+    var(--soft-brown);
+font-size:
+    0.95rem;
+transition:
+    var(--transition);
+border-radius:
+    999px;
+
+}
+
+.main-navigation a:hover,
+
+.main-navigation a.active {
+
+background:
+    var(--soft-beige);
+color:
+    var(--deep-brown);
+
+}
+
+/* =========================================================
+HERO BANNER
+========================================================= */
+
+.hero-banner {
+
+width:
+    100%;
+background:
+    var(--deep-brown);
+overflow:
+    hidden;
+
+}
+
+.hero-banner img {
+
+width:
+    100%;
+height:
+    auto;
+object-fit:
+    contain;
+
+}
+
+/* =========================================================
+GENERAL SECTIONS
+========================================================= */
+
+.welcome-section,
+
+.about-section,
+
+.featured-section,
+
+.gallery-section,
+
+.contact-section,
+
+.gallery-message,
+
+.heart-message {
+
+padding:
+    90px 0;
+
+}
+
+.welcome-section {
+
+background:
+    var(--warm-white);
+text-align:
+    center;
+
+}
+
+.about-section {
+
+background:
+    var(--cream);
+text-align:
+    center;
+
+}
+
+.featured-section {
+
+background:
+    var(--soft-beige);
+text-align:
+    center;
+
+}
+
+.section-label {
+
+display:
+    block;
+margin-bottom:
+    14px;
+color:
+    var(--rose);
+font-size:
+    0.78rem;
+font-weight:
+    bold;
+letter-spacing:
+    0.22em;
+
+}
+
+h1,
+
+h2,
+
+h3 {
+
+color:
+    var(--deep-brown);
+line-height:
+    1.2;
+
+}
+
+h1 {
+
+font-size:
+    clamp(2.4rem, 6vw, 4.5rem);
+margin-bottom:
+    24px;
+
+}
+
+h2 {
+
+font-size:
+    clamp(2rem, 4vw, 3.2rem);
+margin-bottom:
+    24px;
+
+}
+
+h3 {
+
+font-size:
+    1.45rem;
+margin-bottom:
+    14px;
+
+}
+
+p {
+
+max-width:
+    760px;
+margin:
+    0 auto 22px;
+color:
+    var(--soft-brown);
+font-size:
+    1.05rem;
+
+}
+
+/* =========================================================
+BUTTONS
+========================================================= */
+
+.primary-button {
+
+display:
+    inline-block;
+margin-top:
+    15px;
+padding:
+    14px 28px;
+background:
+    var(--wood);
+color:
+    var(--warm-white);
+font-size:
+    0.95rem;
+letter-spacing:
+    0.05em;
+border-radius:
+    999px;
+transition:
+    var(--transition);
+
+}
+
+.primary-button:hover {
+
+background:
+    var(--deep-brown);
+transform:
+    translateY(-2px);
+box-shadow:
+    var(--shadow);
+
+}
+
+/* =========================================================
+FEATURED CREATIONS
+========================================================= */
+
+.featured-grid {
+
+display:
+    grid;
+grid-template-columns:
+    repeat(3, 1fr);
+gap:
+    28px;
+margin:
+    45px 0;
+
+}
+
+.featured-card {
+
+background:
+    var(--warm-white);
+padding:
+    22px;
+border:
+    1px solid
+    var(--border);
+border-radius:
+    12px;
+box-shadow:
+    0 8px 25px
+    rgba(63, 48, 40, 0.08);
+transition:
+    var(--transition);
+
+}
+
+.featured-card:hover {
+
+transform:
+    translateY(-6px);
+box-shadow:
+    var(--shadow);
+
+}
+
+.featured-placeholder {
+
+min-height:
+    220px;
+margin-bottom:
+    24px;
+display:
+    flex;
+align-items:
+    center;
+justify-content:
+    center;
+background:
+    linear-gradient(
+        135deg,
+        var(--soft-beige),
+        var(--taupe)
+    );
+color:
+    var(--deep-brown);
+font-size:
+    1.1rem;
+letter-spacing:
+    0.05em;
+border-radius:
+    8px;
+
+}
+
+/* =========================================================
+HEART MESSAGE
+========================================================= */
+
+.heart-message {
+
+background:
+    var(--deep-brown);
+text-align:
+    center;
+
+}
+
+.heart-message h2,
+
+.heart-message p {
+
+color:
+    var(--cream);
+
+}
+
+.heart-symbol {
+
+margin-bottom:
+    20px;
+color:
+    var(--rose);
+font-size:
+    3rem;
+
+}
+
+/* =========================================================
+PAGE HERO
+========================================================= */
+
+.page-hero {
+
+padding:
+    110px 0 90px;
+background:
+    linear-gradient(
+        135deg,
+        var(--soft-beige),
+        var(--cream)
+    );
+text-align:
+    center;
+
+}
+
+/* =========================================================
+GALLERY
+========================================================= */
+
+.gallery-section {
+
+background:
+    var(--warm-white);
+
+}
+
+.gallery-grid {
+
+width:
+    min(1300px, 92%);
+margin:
+    0 auto;
+display:
+    grid;
+grid-template-columns:
+    repeat(4, 1fr);
+gap:
+    22px;
+
+}
+
+.gallery-item {
+
+min-height:
+    280px;
+display:
+    flex;
+align-items:
+    center;
+justify-content:
+    center;
+background:
+    var(--soft-beige);
+border:
+    1px solid
+    var(--border);
+color:
+    var(--soft-brown);
+border-radius:
+    10px;
+transition:
+    var(--transition);
+
+}
+
+.gallery-item:hover {
+
+transform:
+    translateY(-5px);
+box-shadow:
+    var(--shadow);
+
+}
+
+.gallery-message {
+
+background:
+    var(--cream);
+text-align:
+    center;
+
+}
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.contact-section {
+
+background:
+    var(--warm-white);
+
+}
+
+.contact-card {
+
+max-width:
+    750px;
+margin:
+    0 auto;
+padding:
+    50px;
+background:
+    var(--cream);
+border:
+    1px solid
+    var(--border);
+border-radius:
+    14px;
+text-align:
+    center;
+box-shadow:
+    var(--shadow);
+
+}
+
+.contact-information {
+
+margin-top:
+    35px;
+padding-top:
+    25px;
+border-top:
+    1px solid
+    var(--border);
+
+}
+
+.contact-information p {
+
+margin-bottom:
+    16px;
+
+}
+
+.contact-information strong {
+
+color:
+    var(--deep-brown);
+
+}
+
+.contact-information a {
+
+color:
+    var(--wood);
+font-weight:
+    bold;
+
+}
+
+.contact-information a:hover {
+
+color:
+    var(--rose);
+
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+.site-footer {
+
+padding:
+    35px 20px;
+background:
+    #2f241f;
+text-align:
+    center;
+
+}
+
+.site-footer p {
+
+margin-bottom:
+    5px;
+color:
+    var(--soft-beige);
+font-size:
+    0.9rem;
+
+}
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+.featured-grid {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+.gallery-grid {
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media screen and (max-width: 650px) {
+
+.site-header {
+    position:
+        relative;
+}
+.header-inner {
+    min-height:
+        auto;
+    padding:
+        18px 0;
+    flex-direction:
+        column;
+    gap:
+        14px;
+}
+.site-name {
+    text-align:
+        center;
+}
+.main-navigation {
+    width:
+        100%;
+    justify-content:
+        center;
+    flex-wrap:
+        wrap;
+}
+.main-navigation a {
+    padding:
+        8px 13px;
+    font-size:
+        0.9rem;
+}
+.welcome-section,
+.about-section,
+.featured-section,
+.gallery-section,
+.contact-section,
+.gallery-message,
+.heart-message {
+    padding:
+        65px 0;
+}
+.featured-grid {
+    grid-template-columns:
+        1fr;
+}
+.gallery-grid {
+    grid-template-columns:
+        1fr;
+    width:
+        90%;
+}
+.gallery-item {
+    min-height:
+        330px;
+}
+.contact-card {
+    padding:
+        35px 22px;
+}
+p {
+    font-size:
+        1rem;
+}
+
+}
